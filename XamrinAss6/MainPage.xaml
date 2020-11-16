@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamrinAss6.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="African Bank" HorizontalTextAlignment="Center" TextColor="Black" FontSize="45"/>
+        </Frame>
+        
+        
+        <Entry x:Name="TransferAmountEntry" Placeholder="Transfer Amount" Keyboard="Numeric" />
+        <Entry x:Name="TransferReasonEntry" Placeholder="Transfer Reason" />
+        <Button x:Name="TranferButton" Text="Transfer" Clicked="TranferButton_Clicked" />
+
+        <Button x:Name="DisplayTransactionsButton" Text="Display Transactions" Clicked="DisplayTransactionsButton_Clicked"/>
+        
+        <Label x:Name="DisplayTransactionLabel"/>
+
+
+    </StackLayout>
+
+</ContentPage>
